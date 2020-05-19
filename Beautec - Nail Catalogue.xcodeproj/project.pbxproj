@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5636672D1966BA4E00AC42FC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5636672B1966BA4E00AC42FC /* icon.png */; };
+		5636672E1966BA4E00AC42FC /* icon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5636672C1966BA4E00AC42FC /* icon2x.png */; };
+		564FB70A1A84A877008F4EF3 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 564FB7091A84A877008F4EF3 /* progress.png */; };
+		5653D7EE1A3AED2600A3CBC8 /* catThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5653D7ED1A3AED2600A3CBC8 /* catThemeCell.m */; };
+		56728201199CAA4A00B715B3 /* catColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56728200199CAA4A00B715B3 /* catColorCell.m */; };
+		567FA8EA1A3C4BE700093640 /* naotmThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 567FA8E91A3C4BE700093640 /* naotmThemeCell.m */; };
+		568D04DC199DF497000D876E /* naotmColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D04DB199DF497000D876E /* naotmColorCell.m */; };
+		56940EB91951291400214D0C /* nailMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = 56940EB81951291400214D0C /* nailMonth.png */; };
+		56940EBC19515F4900214D0C /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56940EBA19515F4900214D0C /* Icon-76@2x.png */; };
+		56940EBD19515F4900214D0C /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 56940EBB19515F4900214D0C /* Icon-76.png */; };
+		5696C50E195036A60000028B /* naotmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5696C50D195036A60000028B /* naotmView.m */; };
+		5696C511195038840000028B /* naotmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5696C510195038840000028B /* naotmCell.m */; };
+		569B28DD193EABA5008DCF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28DC193EABA4008DCF46 /* Foundation.framework */; };
+		569B28DF193EABA5008DCF46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28DE193EABA5008DCF46 /* CoreGraphics.framework */; };
+		569B28E1193EABA5008DCF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28E0193EABA5008DCF46 /* UIKit.framework */; };
+		569B28E7193EABA5008DCF46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 569B28E5193EABA5008DCF46 /* InfoPlist.strings */; };
+		569B28E9193EABA5008DCF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B28E8193EABA5008DCF46 /* main.m */; };
+		569B28ED193EABA5008DCF46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B28EC193EABA5008DCF46 /* AppDelegate.m */; };
+		569B28F0193EABA5008DCF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B28EE193EABA5008DCF46 /* Main.storyboard */; };
+		569B28F5193EABA5008DCF46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569B28F4193EABA5008DCF46 /* Images.xcassets */; };
+		569B28FC193EABA6008DCF46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28FB193EABA6008DCF46 /* XCTest.framework */; };
+		569B28FD193EABA6008DCF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28DC193EABA4008DCF46 /* Foundation.framework */; };
+		569B28FE193EABA6008DCF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569B28E0193EABA5008DCF46 /* UIKit.framework */; };
+		569B2906193EABA6008DCF46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 569B2904193EABA6008DCF46 /* InfoPlist.strings */; };
+		569B2908193EABA6008DCF46 /* Ladyfinger___Nail_Art_GalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B2907193EABA6008DCF46 /* Ladyfinger___Nail_Art_GalleryTests.m */; };
+		56A0C319194FBFA4009B7C57 /* colorSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A0C318194FBFA4009B7C57 /* colorSelected.m */; };
+		56A0C31C194FC429009B7C57 /* colorSelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A0C31B194FC429009B7C57 /* colorSelectedCell.m */; };
+		56A0C31F194FE48B009B7C57 /* tbl_PriceRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A0C31E194FE48B009B7C57 /* tbl_PriceRange.m */; };
+		56A0C322194FFFEB009B7C57 /* priceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A0C321194FFFEB009B7C57 /* priceView.m */; };
+		56A0C325195007E8009B7C57 /* priceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A0C324195007E8009B7C57 /* priceCell.m */; };
+		56A0C32819502899009B7C57 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56A0C32619502899009B7C57 /* image3.jpg */; };
+		56A0C32919502899009B7C57 /* naotm.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A0C32719502899009B7C57 /* naotm.png */; };
+		56A74103194161B200629234 /* nailArtDesign.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A740FE194161B200629234 /* nailArtDesign.png */; };
+		56A74104194161B200629234 /* themes.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A740FF194161B200629234 /* themes.png */; };
+		56A74105194161B200629234 /* priceRange.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A74100194161B200629234 /* priceRange.png */; };
+		56A74106194161B200629234 /* colours.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A74101194161B200629234 /* colours.png */; };
+		56A74107194161B200629234 /* nailArtOfTheMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A74102194161B200629234 /* nailArtOfTheMonth.png */; };
+		56AE2E7819418F3B00440312 /* nailArtDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2E7719418F3B00440312 /* nailArtDesign.m */; };
+		56AE2E7B194190CC00440312 /* nailArtDesignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2E7A194190CC00440312 /* nailArtDesignCell.m */; };
+		56AE2E801941A36D00440312 /* detailVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2E7F1941A36D00440312 /* detailVIew.m */; };
+		56AE2E831941A38D00440312 /* detailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2E821941A38D00440312 /* detailViewCell.m */; };
+		56BB080F19405D6F00D37096 /* nailArtMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BB080E19405D6E00D37096 /* nailArtMenu.m */; };
+		56BB08111940697000D37096 /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BB08101940697000D37096 /* drop.png */; };
+		56BB081519406C5B00D37096 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BB081219406C5A00D37096 /* image1.png */; };
+		56BB081619406C5B00D37096 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BB081319406C5B00D37096 /* image2.png */; };
+		56BBD85B193EFFA00041BD83 /* mainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBD85A193EFFA00041BD83 /* mainView.m */; };
+		56BBD861193F09B10041BD83 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBD860193F09B10041BD83 /* libsqlite3.0.dylib */; };
+		56BBD863193F09C40041BD83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBD862193F09C40041BD83 /* QuartzCore.framework */; };
+		56BBD86A193F0C0D0041BD83 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD865193F0C0D0041BD83 /* background.png */; };
+		56BBD86C193F0C0D0041BD83 /* enterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD867193F0C0D0041BD83 /* enterButton.png */; };
+		56BBD86D193F0C0D0041BD83 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD868193F0C0D0041BD83 /* main.png */; };
+		56BBD86E193F0C0D0041BD83 /* startLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD869193F0C0D0041BD83 /* startLogo.png */; };
+		56BBD878193F0C490041BD83 /* tbl_BranchList.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBD871193F0C490041BD83 /* tbl_BranchList.m */; };
+		56BBD879193F0C490041BD83 /* tbl_CatColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBD873193F0C490041BD83 /* tbl_CatColor.m */; };
+		56BBD87A193F0C490041BD83 /* tbl_CatTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBD875193F0C490041BD83 /* tbl_CatTheme.m */; };
+		56BBD87B193F0C490041BD83 /* tbl_NailArtDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBD877193F0C490041BD83 /* tbl_NailArtDesign.m */; };
+		56BBD8CB193F0C960041BD83 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD87D193F0C960041BD83 /* 1.png */; };
+		56BBD8CC193F0C960041BD83 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD87E193F0C960041BD83 /* 10.png */; };
+		56BBD8CD193F0C960041BD83 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD87F193F0C960041BD83 /* 11.png */; };
+		56BBD8CE193F0C960041BD83 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD880193F0C960041BD83 /* 12.png */; };
+		56BBD8CF193F0C960041BD83 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD881193F0C960041BD83 /* 13.png */; };
+		56BBD8D0193F0C960041BD83 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD882193F0C960041BD83 /* 14.png */; };
+		56BBD8D1193F0C960041BD83 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD883193F0C960041BD83 /* 15.png */; };
+		56BBD8D2193F0C960041BD83 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD884193F0C960041BD83 /* 16.png */; };
+		56BBD8D3193F0C960041BD83 /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD885193F0C960041BD83 /* 17.png */; };
+		56BBD8D4193F0C960041BD83 /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD886193F0C960041BD83 /* 18.png */; };
+		56BBD8D5193F0C960041BD83 /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD887193F0C960041BD83 /* 19.png */; };
+		56BBD8D6193F0C960041BD83 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD888193F0C960041BD83 /* 2.png */; };
+		56BBD8D7193F0C960041BD83 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD889193F0C960041BD83 /* 20.png */; };
+		56BBD8D8193F0C960041BD83 /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88A193F0C960041BD83 /* 21.png */; };
+		56BBD8D9193F0C960041BD83 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88B193F0C960041BD83 /* 22.png */; };
+		56BBD8DA193F0C960041BD83 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88C193F0C960041BD83 /* 23.png */; };
+		56BBD8DB193F0C960041BD83 /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88D193F0C960041BD83 /* 24.png */; };
+		56BBD8DC193F0C960041BD83 /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88E193F0C960041BD83 /* 25.png */; };
+		56BBD8DD193F0C960041BD83 /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD88F193F0C960041BD83 /* 26.png */; };
+		56BBD8DE193F0C960041BD83 /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD890193F0C960041BD83 /* 27.png */; };
+		56BBD8DF193F0C960041BD83 /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD891193F0C960041BD83 /* 28.png */; };
+		56BBD8E0193F0C960041BD83 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD892193F0C960041BD83 /* 29.png */; };
+		56BBD8E1193F0C960041BD83 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD893193F0C960041BD83 /* 3.png */; };
+		56BBD8E2193F0C960041BD83 /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD894193F0C960041BD83 /* 30.png */; };
+		56BBD8E3193F0C960041BD83 /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD895193F0C960041BD83 /* 31.png */; };
+		56BBD8E4193F0C960041BD83 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD896193F0C960041BD83 /* 32.png */; };
+		56BBD8E5193F0C960041BD83 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD897193F0C960041BD83 /* 33.png */; };
+		56BBD8E6193F0C960041BD83 /* 34.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD898193F0C960041BD83 /* 34.png */; };
+		56BBD8E7193F0C960041BD83 /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD899193F0C960041BD83 /* 35.png */; };
+		56BBD8E8193F0C960041BD83 /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89A193F0C960041BD83 /* 36.png */; };
+		56BBD8E9193F0C960041BD83 /* 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89B193F0C960041BD83 /* 37.png */; };
+		56BBD8EA193F0C960041BD83 /* 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89C193F0C960041BD83 /* 38.png */; };
+		56BBD8EB193F0C960041BD83 /* 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89D193F0C960041BD83 /* 39.png */; };
+		56BBD8EC193F0C960041BD83 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89E193F0C960041BD83 /* 4.png */; };
+		56BBD8ED193F0C960041BD83 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD89F193F0C960041BD83 /* 40.png */; };
+		56BBD8F7193F0C960041BD83 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD8A9193F0C960041BD83 /* 5.png */; };
+		56BBD902193F0C960041BD83 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD8B4193F0C960041BD83 /* 6.png */; };
+		56BBD90E193F0C960041BD83 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD8C0193F0C960041BD83 /* 7.png */; };
+		56BBD917193F0C960041BD83 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD8C9193F0C960041BD83 /* 8.png */; };
+		56BBD918193F0C960041BD83 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BBD8CA193F0C960041BD83 /* 9.png */; };
+		56DCAF9E1945A4C400B284C1 /* arrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DCAF9C1945A4C400B284C1 /* arrowLeft.png */; };
+		56DCAF9F1945A4C400B284C1 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DCAF9D1945A4C400B284C1 /* rightArrow.png */; };
+		56F73A2D194E84BC00842391 /* themeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A2C194E84BC00842391 /* themeView.m */; };
+		56F73A30194E84EB00842391 /* themeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A2F194E84EB00842391 /* themeCell.m */; };
+		56F73A3C194E915700842391 /* themeSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A3B194E915700842391 /* themeSelected.m */; };
+		56F73A3F194E91D500842391 /* themeSelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A3E194E91D500842391 /* themeSelectedCell.m */; };
+		56F73A42194EC67A00842391 /* colorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A41194EC67A00842391 /* colorView.m */; };
+		56F73A44194EF79300842391 /* colorBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 56F73A43194EF79200842391 /* colorBackground.png */; };
+		56F73A47194EFAD600842391 /* colorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F73A46194EFAD600842391 /* colorCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		569B28FF193EABA6008DCF46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 569B28D1193EABA4008DCF46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 569B28D8193EABA4008DCF46;
+			remoteInfo = "Lady Finger - Nail Art Gallery";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5636672B1966BA4E00AC42FC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5636672C1966BA4E00AC42FC /* icon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2x.png; sourceTree = "<group>"; };
+		564FB7091A84A877008F4EF3 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
+		5653D7EC1A3AED2600A3CBC8 /* catThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catThemeCell.h; sourceTree = "<group>"; };
+		5653D7ED1A3AED2600A3CBC8 /* catThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catThemeCell.m; sourceTree = "<group>"; };
+		567281FF199CAA4A00B715B3 /* catColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catColorCell.h; sourceTree = "<group>"; };
+		56728200199CAA4A00B715B3 /* catColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catColorCell.m; sourceTree = "<group>"; };
+		567FA8E81A3C4BE700093640 /* naotmThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naotmThemeCell.h; sourceTree = "<group>"; };
+		567FA8E91A3C4BE700093640 /* naotmThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naotmThemeCell.m; sourceTree = "<group>"; };
+		568D04DA199DF497000D876E /* naotmColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naotmColorCell.h; sourceTree = "<group>"; };
+		568D04DB199DF497000D876E /* naotmColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naotmColorCell.m; sourceTree = "<group>"; };
+		56940EB81951291400214D0C /* nailMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nailMonth.png; sourceTree = "<group>"; };
+		56940EBA19515F4900214D0C /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		56940EBB19515F4900214D0C /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		5696C50C195036A60000028B /* naotmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naotmView.h; sourceTree = "<group>"; };
+		5696C50D195036A60000028B /* naotmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naotmView.m; sourceTree = "<group>"; };
+		5696C50F195038840000028B /* naotmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naotmCell.h; sourceTree = "<group>"; };
+		5696C510195038840000028B /* naotmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = naotmCell.m; sourceTree = "<group>"; };
+		569B28D9193EABA4008DCF46 /* Beautec - Nail Catalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beautec - Nail Catalogue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		569B28DC193EABA4008DCF46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		569B28DE193EABA5008DCF46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		569B28E0193EABA5008DCF46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		569B28E4193EABA5008DCF46 /* Beautec - Nail Catalogue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beautec - Nail Catalogue-Info.plist"; sourceTree = "<group>"; };
+		569B28E6193EABA5008DCF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		569B28E8193EABA5008DCF46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		569B28EA193EABA5008DCF46 /* Beautec - Nail Catalogue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beautec - Nail Catalogue-Prefix.pch"; sourceTree = "<group>"; };
+		569B28EB193EABA5008DCF46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		569B28EC193EABA5008DCF46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		569B28EF193EABA5008DCF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		569B28F4193EABA5008DCF46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		569B28FA193EABA6008DCF46 /* Beautec - Nail CatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beautec - Nail CatalogueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		569B28FB193EABA6008DCF46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		569B2903193EABA6008DCF46 /* Beautec - Nail CatalogueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beautec - Nail CatalogueTests-Info.plist"; sourceTree = "<group>"; };
+		569B2905193EABA6008DCF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		569B2907193EABA6008DCF46 /* Ladyfinger___Nail_Art_GalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Ladyfinger___Nail_Art_GalleryTests.m"; sourceTree = "<group>"; };
+		56A0C317194FBFA4009B7C57 /* colorSelected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorSelected.h; sourceTree = "<group>"; };
+		56A0C318194FBFA4009B7C57 /* colorSelected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorSelected.m; sourceTree = "<group>"; };
+		56A0C31A194FC429009B7C57 /* colorSelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorSelectedCell.h; sourceTree = "<group>"; };
+		56A0C31B194FC429009B7C57 /* colorSelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorSelectedCell.m; sourceTree = "<group>"; };
+		56A0C31D194FE48B009B7C57 /* tbl_PriceRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbl_PriceRange.h; sourceTree = "<group>"; };
+		56A0C31E194FE48B009B7C57 /* tbl_PriceRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbl_PriceRange.m; sourceTree = "<group>"; };
+		56A0C320194FFFEB009B7C57 /* priceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priceView.h; sourceTree = "<group>"; };
+		56A0C321194FFFEB009B7C57 /* priceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = priceView.m; sourceTree = "<group>"; };
+		56A0C323195007E8009B7C57 /* priceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priceCell.h; sourceTree = "<group>"; };
+		56A0C324195007E8009B7C57 /* priceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = priceCell.m; sourceTree = "<group>"; };
+		56A0C32619502899009B7C57 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		56A0C32719502899009B7C57 /* naotm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naotm.png; sourceTree = "<group>"; };
+		56A740FE194161B200629234 /* nailArtDesign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nailArtDesign.png; sourceTree = "<group>"; };
+		56A740FF194161B200629234 /* themes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = themes.png; sourceTree = "<group>"; };
+		56A74100194161B200629234 /* priceRange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priceRange.png; sourceTree = "<group>"; };
+		56A74101194161B200629234 /* colours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colours.png; sourceTree = "<group>"; };
+		56A74102194161B200629234 /* nailArtOfTheMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nailArtOfTheMonth.png; sourceTree = "<group>"; };
+		56AE2E7619418F3B00440312 /* nailArtDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nailArtDesign.h; sourceTree = "<group>"; };
+		56AE2E7719418F3B00440312 /* nailArtDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nailArtDesign.m; sourceTree = "<group>"; };
+		56AE2E79194190CC00440312 /* nailArtDesignCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nailArtDesignCell.h; sourceTree = "<group>"; };
+		56AE2E7A194190CC00440312 /* nailArtDesignCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nailArtDesignCell.m; sourceTree = "<group>"; };
+		56AE2E7E1941A36D00440312 /* detailVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailVIew.h; sourceTree = "<group>"; };
+		56AE2E7F1941A36D00440312 /* detailVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailVIew.m; sourceTree = "<group>"; };
+		56AE2E811941A38D00440312 /* detailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewCell.h; sourceTree = "<group>"; };
+		56AE2E821941A38D00440312 /* detailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewCell.m; sourceTree = "<group>"; };
+		56BB080D19405D6A00D37096 /* nailArtMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nailArtMenu.h; sourceTree = "<group>"; };
+		56BB080E19405D6E00D37096 /* nailArtMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nailArtMenu.m; sourceTree = "<group>"; };
+		56BB08101940697000D37096 /* drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop.png; sourceTree = "<group>"; };
+		56BB081219406C5A00D37096 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		56BB081319406C5B00D37096 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		56BBD859193EFFA00041BD83 /* mainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainView.h; sourceTree = "<group>"; };
+		56BBD85A193EFFA00041BD83 /* mainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainView.m; sourceTree = "<group>"; };
+		56BBD860193F09B10041BD83 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		56BBD862193F09C40041BD83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56BBD865193F0C0D0041BD83 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		56BBD867193F0C0D0041BD83 /* enterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enterButton.png; sourceTree = "<group>"; };
+		56BBD868193F0C0D0041BD83 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		56BBD869193F0C0D0041BD83 /* startLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startLogo.png; sourceTree = "<group>"; };
+		56BBD870193F0C490041BD83 /* tbl_BranchList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbl_BranchList.h; sourceTree = "<group>"; };
+		56BBD871193F0C490041BD83 /* tbl_BranchList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbl_BranchList.m; sourceTree = "<group>"; };
+		56BBD872193F0C490041BD83 /* tbl_CatColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbl_CatColor.h; sourceTree = "<group>"; };
+		56BBD873193F0C490041BD83 /* tbl_CatColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbl_CatColor.m; sourceTree = "<group>"; };
+		56BBD874193F0C490041BD83 /* tbl_CatTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbl_CatTheme.h; sourceTree = "<group>"; };
+		56BBD875193F0C490041BD83 /* tbl_CatTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbl_CatTheme.m; sourceTree = "<group>"; };
+		56BBD876193F0C490041BD83 /* tbl_NailArtDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbl_NailArtDesign.h; sourceTree = "<group>"; };
+		56BBD877193F0C490041BD83 /* tbl_NailArtDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbl_NailArtDesign.m; sourceTree = "<group>"; };
+		56BBD87D193F0C960041BD83 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		56BBD87E193F0C960041BD83 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		56BBD87F193F0C960041BD83 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		56BBD880193F0C960041BD83 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		56BBD881193F0C960041BD83 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		56BBD882193F0C960041BD83 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		56BBD883193F0C960041BD83 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		56BBD884193F0C960041BD83 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		56BBD885193F0C960041BD83 /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		56BBD886193F0C960041BD83 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		56BBD887193F0C960041BD83 /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		56BBD888193F0C960041BD83 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		56BBD889193F0C960041BD83 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		56BBD88A193F0C960041BD83 /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		56BBD88B193F0C960041BD83 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		56BBD88C193F0C960041BD83 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		56BBD88D193F0C960041BD83 /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		56BBD88E193F0C960041BD83 /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		56BBD88F193F0C960041BD83 /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		56BBD890193F0C960041BD83 /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		56BBD891193F0C960041BD83 /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		56BBD892193F0C960041BD83 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		56BBD893193F0C960041BD83 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		56BBD894193F0C960041BD83 /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		56BBD895193F0C960041BD83 /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		56BBD896193F0C960041BD83 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		56BBD897193F0C960041BD83 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
+		56BBD898193F0C960041BD83 /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34.png; sourceTree = "<group>"; };
+		56BBD899193F0C960041BD83 /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35.png; sourceTree = "<group>"; };
+		56BBD89A193F0C960041BD83 /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36.png; sourceTree = "<group>"; };
+		56BBD89B193F0C960041BD83 /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 37.png; sourceTree = "<group>"; };
+		56BBD89C193F0C960041BD83 /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38.png; sourceTree = "<group>"; };
+		56BBD89D193F0C960041BD83 /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 39.png; sourceTree = "<group>"; };
+		56BBD89E193F0C960041BD83 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		56BBD89F193F0C960041BD83 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		56BBD8A9193F0C960041BD83 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		56BBD8B4193F0C960041BD83 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		56BBD8C0193F0C960041BD83 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		56BBD8C9193F0C960041BD83 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		56BBD8CA193F0C960041BD83 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		56DCAF9C1945A4C400B284C1 /* arrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowLeft.png; sourceTree = "<group>"; };
+		56DCAF9D1945A4C400B284C1 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
+		56F73A2B194E84BC00842391 /* themeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = themeView.h; sourceTree = "<group>"; };
+		56F73A2C194E84BC00842391 /* themeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = themeView.m; sourceTree = "<group>"; };
+		56F73A2E194E84EB00842391 /* themeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = themeCell.h; sourceTree = "<group>"; };
+		56F73A2F194E84EB00842391 /* themeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = themeCell.m; sourceTree = "<group>"; };
+		56F73A3A194E915700842391 /* themeSelected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = themeSelected.h; sourceTree = "<group>"; };
+		56F73A3B194E915700842391 /* themeSelected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = themeSelected.m; sourceTree = "<group>"; };
+		56F73A3D194E91D500842391 /* themeSelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = themeSelectedCell.h; sourceTree = "<group>"; };
+		56F73A3E194E91D500842391 /* themeSelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = themeSelectedCell.m; sourceTree = "<group>"; };
+		56F73A40194EC67A00842391 /* colorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorView.h; sourceTree = "<group>"; };
+		56F73A41194EC67A00842391 /* colorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorView.m; sourceTree = "<group>"; };
+		56F73A43194EF79200842391 /* colorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorBackground.png; sourceTree = "<group>"; };
+		56F73A45194EFAD600842391 /* colorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorCell.h; sourceTree = "<group>"; };
+		56F73A46194EFAD600842391 /* colorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		569B28D6193EABA4008DCF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BBD863193F09C40041BD83 /* QuartzCore.framework in Frameworks */,
+				56BBD861193F09B10041BD83 /* libsqlite3.0.dylib in Frameworks */,
+				569B28DF193EABA5008DCF46 /* CoreGraphics.framework in Frameworks */,
+				569B28E1193EABA5008DCF46 /* UIKit.framework in Frameworks */,
+				569B28DD193EABA5008DCF46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		569B28F7193EABA6008DCF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569B28FC193EABA6008DCF46 /* XCTest.framework in Frameworks */,
+				569B28FE193EABA6008DCF46 /* UIKit.framework in Frameworks */,
+				569B28FD193EABA6008DCF46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		569B28D0193EABA4008DCF46 = {
+			isa = PBXGroup;
+			children = (
+				569B28E2193EABA5008DCF46 /* Beautec - Nail Catalogue */,
+				569B2901193EABA6008DCF46 /* Beautec - Nail Catalogue */,
+				569B28DB193EABA4008DCF46 /* Frameworks */,
+				569B28DA193EABA4008DCF46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		569B28DA193EABA4008DCF46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				569B28D9193EABA4008DCF46 /* Beautec - Nail Catalogue.app */,
+				569B28FA193EABA6008DCF46 /* Beautec - Nail CatalogueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		569B28DB193EABA4008DCF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56BBD862193F09C40041BD83 /* QuartzCore.framework */,
+				56BBD860193F09B10041BD83 /* libsqlite3.0.dylib */,
+				569B28DC193EABA4008DCF46 /* Foundation.framework */,
+				569B28DE193EABA5008DCF46 /* CoreGraphics.framework */,
+				569B28E0193EABA5008DCF46 /* UIKit.framework */,
+				569B28FB193EABA6008DCF46 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		569B28E2193EABA5008DCF46 /* Beautec - Nail Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				56BBD87C193F0C960041BD83 /* animation */,
+				56BBD86F193F0C490041BD83 /* sqlite */,
+				56BBD864193F0C0D0041BD83 /* images */,
+				56BBD858193EFF800041BD83 /* resources */,
+				569B28EC193EABA5008DCF46 /* AppDelegate.m */,
+				569B28EB193EABA5008DCF46 /* AppDelegate.h */,
+				569B28EE193EABA5008DCF46 /* Main.storyboard */,
+				569B28F4193EABA5008DCF46 /* Images.xcassets */,
+				569B28E3193EABA5008DCF46 /* Supporting Files */,
+			);
+			name = "Beautec - Nail Catalogue";
+			path = "Lady Finger - Nail Art Gallery";
+			sourceTree = "<group>";
+		};
+		569B28E3193EABA5008DCF46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				569B28E4193EABA5008DCF46 /* Beautec - Nail Catalogue-Info.plist */,
+				569B28E5193EABA5008DCF46 /* InfoPlist.strings */,
+				569B28E8193EABA5008DCF46 /* main.m */,
+				569B28EA193EABA5008DCF46 /* Beautec - Nail Catalogue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		569B2901193EABA6008DCF46 /* Beautec - Nail Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				569B2907193EABA6008DCF46 /* Ladyfinger___Nail_Art_GalleryTests.m */,
+				569B2902193EABA6008DCF46 /* Supporting Files */,
+			);
+			name = "Beautec - Nail Catalogue";
+			path = "Lady Finger - Nail Art GalleryTests";
+			sourceTree = "<group>";
+		};
+		569B2902193EABA6008DCF46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				569B2903193EABA6008DCF46 /* Beautec - Nail CatalogueTests-Info.plist */,
+				569B2904193EABA6008DCF46 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56BBD858193EFF800041BD83 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				56BBD859193EFFA00041BD83 /* mainView.h */,
+				56BBD85A193EFFA00041BD83 /* mainView.m */,
+				56BB080D19405D6A00D37096 /* nailArtMenu.h */,
+				56BB080E19405D6E00D37096 /* nailArtMenu.m */,
+				56AE2E7619418F3B00440312 /* nailArtDesign.h */,
+				56AE2E7719418F3B00440312 /* nailArtDesign.m */,
+				56AE2E79194190CC00440312 /* nailArtDesignCell.h */,
+				56AE2E7A194190CC00440312 /* nailArtDesignCell.m */,
+				56AE2E7E1941A36D00440312 /* detailVIew.h */,
+				56AE2E7F1941A36D00440312 /* detailVIew.m */,
+				56AE2E811941A38D00440312 /* detailViewCell.h */,
+				56AE2E821941A38D00440312 /* detailViewCell.m */,
+				567281FF199CAA4A00B715B3 /* catColorCell.h */,
+				56728200199CAA4A00B715B3 /* catColorCell.m */,
+				5653D7EC1A3AED2600A3CBC8 /* catThemeCell.h */,
+				5653D7ED1A3AED2600A3CBC8 /* catThemeCell.m */,
+				56F73A2B194E84BC00842391 /* themeView.h */,
+				56F73A2C194E84BC00842391 /* themeView.m */,
+				56F73A2E194E84EB00842391 /* themeCell.h */,
+				56F73A2F194E84EB00842391 /* themeCell.m */,
+				56F73A3D194E91D500842391 /* themeSelectedCell.h */,
+				56F73A3A194E915700842391 /* themeSelected.h */,
+				56F73A3B194E915700842391 /* themeSelected.m */,
+				56F73A3E194E91D500842391 /* themeSelectedCell.m */,
+				56F73A46194EFAD600842391 /* colorCell.m */,
+				56F73A40194EC67A00842391 /* colorView.h */,
+				56F73A41194EC67A00842391 /* colorView.m */,
+				56F73A45194EFAD600842391 /* colorCell.h */,
+				56A0C317194FBFA4009B7C57 /* colorSelected.h */,
+				56A0C318194FBFA4009B7C57 /* colorSelected.m */,
+				56A0C31A194FC429009B7C57 /* colorSelectedCell.h */,
+				56A0C31B194FC429009B7C57 /* colorSelectedCell.m */,
+				56A0C320194FFFEB009B7C57 /* priceView.h */,
+				56A0C321194FFFEB009B7C57 /* priceView.m */,
+				56A0C323195007E8009B7C57 /* priceCell.h */,
+				56A0C324195007E8009B7C57 /* priceCell.m */,
+				5696C50C195036A60000028B /* naotmView.h */,
+				5696C50D195036A60000028B /* naotmView.m */,
+				568D04DA199DF497000D876E /* naotmColorCell.h */,
+				568D04DB199DF497000D876E /* naotmColorCell.m */,
+				567FA8E81A3C4BE700093640 /* naotmThemeCell.h */,
+				567FA8E91A3C4BE700093640 /* naotmThemeCell.m */,
+				5696C50F195038840000028B /* naotmCell.h */,
+				5696C510195038840000028B /* naotmCell.m */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		56BBD864193F0C0D0041BD83 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5636672B1966BA4E00AC42FC /* icon.png */,
+				5636672C1966BA4E00AC42FC /* icon2x.png */,
+				56940EBA19515F4900214D0C /* Icon-76@2x.png */,
+				564FB7091A84A877008F4EF3 /* progress.png */,
+				56940EBB19515F4900214D0C /* Icon-76.png */,
+				56A0C32619502899009B7C57 /* image3.jpg */,
+				56A0C32719502899009B7C57 /* naotm.png */,
+				56940EB81951291400214D0C /* nailMonth.png */,
+				56A740FE194161B200629234 /* nailArtDesign.png */,
+				56A740FF194161B200629234 /* themes.png */,
+				56A74100194161B200629234 /* priceRange.png */,
+				56A74101194161B200629234 /* colours.png */,
+				56A74102194161B200629234 /* nailArtOfTheMonth.png */,
+				56BBD865193F0C0D0041BD83 /* background.png */,
+				56BB08101940697000D37096 /* drop.png */,
+				56DCAF9C1945A4C400B284C1 /* arrowLeft.png */,
+				56DCAF9D1945A4C400B284C1 /* rightArrow.png */,
+				56BBD867193F0C0D0041BD83 /* enterButton.png */,
+				56BB081219406C5A00D37096 /* image1.png */,
+				56BB081319406C5B00D37096 /* image2.png */,
+				56F73A43194EF79200842391 /* colorBackground.png */,
+				56BBD868193F0C0D0041BD83 /* main.png */,
+				56BBD869193F0C0D0041BD83 /* startLogo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		56BBD86F193F0C490041BD83 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				56BBD870193F0C490041BD83 /* tbl_BranchList.h */,
+				56BBD871193F0C490041BD83 /* tbl_BranchList.m */,
+				56BBD872193F0C490041BD83 /* tbl_CatColor.h */,
+				56BBD873193F0C490041BD83 /* tbl_CatColor.m */,
+				56BBD874193F0C490041BD83 /* tbl_CatTheme.h */,
+				56BBD875193F0C490041BD83 /* tbl_CatTheme.m */,
+				56BBD876193F0C490041BD83 /* tbl_NailArtDesign.h */,
+				56BBD877193F0C490041BD83 /* tbl_NailArtDesign.m */,
+				56A0C31D194FE48B009B7C57 /* tbl_PriceRange.h */,
+				56A0C31E194FE48B009B7C57 /* tbl_PriceRange.m */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		56BBD87C193F0C960041BD83 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				56BBD87D193F0C960041BD83 /* 1.png */,
+				56BBD87E193F0C960041BD83 /* 10.png */,
+				56BBD87F193F0C960041BD83 /* 11.png */,
+				56BBD880193F0C960041BD83 /* 12.png */,
+				56BBD881193F0C960041BD83 /* 13.png */,
+				56BBD882193F0C960041BD83 /* 14.png */,
+				56BBD883193F0C960041BD83 /* 15.png */,
+				56BBD884193F0C960041BD83 /* 16.png */,
+				56BBD885193F0C960041BD83 /* 17.png */,
+				56BBD886193F0C960041BD83 /* 18.png */,
+				56BBD887193F0C960041BD83 /* 19.png */,
+				56BBD888193F0C960041BD83 /* 2.png */,
+				56BBD889193F0C960041BD83 /* 20.png */,
+				56BBD88A193F0C960041BD83 /* 21.png */,
+				56BBD88B193F0C960041BD83 /* 22.png */,
+				56BBD88C193F0C960041BD83 /* 23.png */,
+				56BBD88D193F0C960041BD83 /* 24.png */,
+				56BBD88E193F0C960041BD83 /* 25.png */,
+				56BBD88F193F0C960041BD83 /* 26.png */,
+				56BBD890193F0C960041BD83 /* 27.png */,
+				56BBD891193F0C960041BD83 /* 28.png */,
+				56BBD892193F0C960041BD83 /* 29.png */,
+				56BBD893193F0C960041BD83 /* 3.png */,
+				56BBD894193F0C960041BD83 /* 30.png */,
+				56BBD895193F0C960041BD83 /* 31.png */,
+				56BBD896193F0C960041BD83 /* 32.png */,
+				56BBD897193F0C960041BD83 /* 33.png */,
+				56BBD898193F0C960041BD83 /* 34.png */,
+				56BBD899193F0C960041BD83 /* 35.png */,
+				56BBD89A193F0C960041BD83 /* 36.png */,
+				56BBD89B193F0C960041BD83 /* 37.png */,
+				56BBD89C193F0C960041BD83 /* 38.png */,
+				56BBD89D193F0C960041BD83 /* 39.png */,
+				56BBD89E193F0C960041BD83 /* 4.png */,
+				56BBD89F193F0C960041BD83 /* 40.png */,
+				56BBD8A9193F0C960041BD83 /* 5.png */,
+				56BBD8B4193F0C960041BD83 /* 6.png */,
+				56BBD8C0193F0C960041BD83 /* 7.png */,
+				56BBD8C9193F0C960041BD83 /* 8.png */,
+				56BBD8CA193F0C960041BD83 /* 9.png */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		569B28D8193EABA4008DCF46 /* Beautec - Nail Catalogue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 569B290B193EABA6008DCF46 /* Build configuration list for PBXNativeTarget "Beautec - Nail Catalogue" */;
+			buildPhases = (
+				569B28D5193EABA4008DCF46 /* Sources */,
+				569B28D6193EABA4008DCF46 /* Frameworks */,
+				569B28D7193EABA4008DCF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beautec - Nail Catalogue";
+			productName = "Lady Finger - Nail Art Gallery";
+			productReference = 569B28D9193EABA4008DCF46 /* Beautec - Nail Catalogue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		569B28F9193EABA6008DCF46 /* Beautec - Nail CatalogueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 569B290E193EABA6008DCF46 /* Build configuration list for PBXNativeTarget "Beautec - Nail CatalogueTests" */;
+			buildPhases = (
+				569B28F6193EABA6008DCF46 /* Sources */,
+				569B28F7193EABA6008DCF46 /* Frameworks */,
+				569B28F8193EABA6008DCF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				569B2900193EABA6008DCF46 /* PBXTargetDependency */,
+			);
+			name = "Beautec - Nail CatalogueTests";
+			productName = "Lady Finger - Nail Art GalleryTests";
+			productReference = 569B28FA193EABA6008DCF46 /* Beautec - Nail CatalogueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		569B28D1193EABA4008DCF46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = RLIM;
+				TargetAttributes = {
+					569B28D8193EABA4008DCF46 = {
+						DevelopmentTeam = 92583X2ZZ9;
+					};
+					569B28F9193EABA6008DCF46 = {
+						TestTargetID = 569B28D8193EABA4008DCF46;
+					};
+				};
+			};
+			buildConfigurationList = 569B28D4193EABA4008DCF46 /* Build configuration list for PBXProject "Beautec - Nail Catalogue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 569B28D0193EABA4008DCF46;
+			productRefGroup = 569B28DA193EABA4008DCF46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				569B28D8193EABA4008DCF46 /* Beautec - Nail Catalogue */,
+				569B28F9193EABA6008DCF46 /* Beautec - Nail CatalogueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		569B28D7193EABA4008DCF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BBD8E9193F0C960041BD83 /* 37.png in Resources */,
+				56BB08111940697000D37096 /* drop.png in Resources */,
+				56BBD8E6193F0C960041BD83 /* 34.png in Resources */,
+				56BBD8E0193F0C960041BD83 /* 29.png in Resources */,
+				56BBD8DC193F0C960041BD83 /* 25.png in Resources */,
+				56BBD8ED193F0C960041BD83 /* 40.png in Resources */,
+				56BBD8D7193F0C960041BD83 /* 20.png in Resources */,
+				56BBD8D2193F0C960041BD83 /* 16.png in Resources */,
+				56BBD8D1193F0C960041BD83 /* 15.png in Resources */,
+				56DCAF9E1945A4C400B284C1 /* arrowLeft.png in Resources */,
+				56BBD8E7193F0C960041BD83 /* 35.png in Resources */,
+				56BBD8D6193F0C960041BD83 /* 2.png in Resources */,
+				56940EBC19515F4900214D0C /* Icon-76@2x.png in Resources */,
+				56BBD8CF193F0C960041BD83 /* 13.png in Resources */,
+				56BBD918193F0C960041BD83 /* 9.png in Resources */,
+				56BBD917193F0C960041BD83 /* 8.png in Resources */,
+				56BBD8CE193F0C960041BD83 /* 12.png in Resources */,
+				56940EBD19515F4900214D0C /* Icon-76.png in Resources */,
+				56BBD8DA193F0C960041BD83 /* 23.png in Resources */,
+				5636672E1966BA4E00AC42FC /* icon2x.png in Resources */,
+				56BBD8E3193F0C960041BD83 /* 31.png in Resources */,
+				56A74107194161B200629234 /* nailArtOfTheMonth.png in Resources */,
+				56BBD8F7193F0C960041BD83 /* 5.png in Resources */,
+				56BBD8CD193F0C960041BD83 /* 11.png in Resources */,
+				56BBD8CC193F0C960041BD83 /* 10.png in Resources */,
+				56DCAF9F1945A4C400B284C1 /* rightArrow.png in Resources */,
+				56BBD8D4193F0C960041BD83 /* 18.png in Resources */,
+				56940EB91951291400214D0C /* nailMonth.png in Resources */,
+				56BBD8CB193F0C960041BD83 /* 1.png in Resources */,
+				56BBD8DD193F0C960041BD83 /* 26.png in Resources */,
+				56BBD8D8193F0C960041BD83 /* 21.png in Resources */,
+				56BBD8DE193F0C960041BD83 /* 27.png in Resources */,
+				56BBD8EA193F0C960041BD83 /* 38.png in Resources */,
+				56BBD86C193F0C0D0041BD83 /* enterButton.png in Resources */,
+				56BBD8E1193F0C960041BD83 /* 3.png in Resources */,
+				56BBD8D3193F0C960041BD83 /* 17.png in Resources */,
+				56BBD86D193F0C0D0041BD83 /* main.png in Resources */,
+				5636672D1966BA4E00AC42FC /* icon.png in Resources */,
+				56BBD8DB193F0C960041BD83 /* 24.png in Resources */,
+				56BBD8E4193F0C960041BD83 /* 32.png in Resources */,
+				569B28F5193EABA5008DCF46 /* Images.xcassets in Resources */,
+				56BBD8D5193F0C960041BD83 /* 19.png in Resources */,
+				56A74106194161B200629234 /* colours.png in Resources */,
+				56BBD902193F0C960041BD83 /* 6.png in Resources */,
+				56A74104194161B200629234 /* themes.png in Resources */,
+				56BB081619406C5B00D37096 /* image2.png in Resources */,
+				56A74105194161B200629234 /* priceRange.png in Resources */,
+				56BBD8E5193F0C960041BD83 /* 33.png in Resources */,
+				56BB081519406C5B00D37096 /* image1.png in Resources */,
+				56A74103194161B200629234 /* nailArtDesign.png in Resources */,
+				56BBD8DF193F0C960041BD83 /* 28.png in Resources */,
+				56BBD8E8193F0C960041BD83 /* 36.png in Resources */,
+				56BBD8D9193F0C960041BD83 /* 22.png in Resources */,
+				56A0C32819502899009B7C57 /* image3.jpg in Resources */,
+				56BBD86A193F0C0D0041BD83 /* background.png in Resources */,
+				56BBD8D0193F0C960041BD83 /* 14.png in Resources */,
+				564FB70A1A84A877008F4EF3 /* progress.png in Resources */,
+				56BBD8EC193F0C960041BD83 /* 4.png in Resources */,
+				56BBD8E2193F0C960041BD83 /* 30.png in Resources */,
+				56A0C32919502899009B7C57 /* naotm.png in Resources */,
+				56BBD8EB193F0C960041BD83 /* 39.png in Resources */,
+				569B28E7193EABA5008DCF46 /* InfoPlist.strings in Resources */,
+				56F73A44194EF79300842391 /* colorBackground.png in Resources */,
+				569B28F0193EABA5008DCF46 /* Main.storyboard in Resources */,
+				56BBD86E193F0C0D0041BD83 /* startLogo.png in Resources */,
+				56BBD90E193F0C960041BD83 /* 7.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		569B28F8193EABA6008DCF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569B2906193EABA6008DCF46 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		569B28D5193EABA4008DCF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5696C50E195036A60000028B /* naotmView.m in Sources */,
+				56F73A42194EC67A00842391 /* colorView.m in Sources */,
+				56BB080F19405D6F00D37096 /* nailArtMenu.m in Sources */,
+				56A0C31C194FC429009B7C57 /* colorSelectedCell.m in Sources */,
+				56F73A2D194E84BC00842391 /* themeView.m in Sources */,
+				56F73A47194EFAD600842391 /* colorCell.m in Sources */,
+				569B28ED193EABA5008DCF46 /* AppDelegate.m in Sources */,
+				56BBD85B193EFFA00041BD83 /* mainView.m in Sources */,
+				56AE2E801941A36D00440312 /* detailVIew.m in Sources */,
+				56AE2E7B194190CC00440312 /* nailArtDesignCell.m in Sources */,
+				568D04DC199DF497000D876E /* naotmColorCell.m in Sources */,
+				56A0C319194FBFA4009B7C57 /* colorSelected.m in Sources */,
+				56A0C31F194FE48B009B7C57 /* tbl_PriceRange.m in Sources */,
+				56BBD878193F0C490041BD83 /* tbl_BranchList.m in Sources */,
+				56F73A30194E84EB00842391 /* themeCell.m in Sources */,
+				5696C511195038840000028B /* naotmCell.m in Sources */,
+				56BBD87B193F0C490041BD83 /* tbl_NailArtDesign.m in Sources */,
+				56AE2E7819418F3B00440312 /* nailArtDesign.m in Sources */,
+				567FA8EA1A3C4BE700093640 /* naotmThemeCell.m in Sources */,
+				56F73A3F194E91D500842391 /* themeSelectedCell.m in Sources */,
+				569B28E9193EABA5008DCF46 /* main.m in Sources */,
+				56F73A3C194E915700842391 /* themeSelected.m in Sources */,
+				56AE2E831941A38D00440312 /* detailViewCell.m in Sources */,
+				56A0C325195007E8009B7C57 /* priceCell.m in Sources */,
+				56728201199CAA4A00B715B3 /* catColorCell.m in Sources */,
+				5653D7EE1A3AED2600A3CBC8 /* catThemeCell.m in Sources */,
+				56BBD879193F0C490041BD83 /* tbl_CatColor.m in Sources */,
+				56A0C322194FFFEB009B7C57 /* priceView.m in Sources */,
+				56BBD87A193F0C490041BD83 /* tbl_CatTheme.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		569B28F6193EABA6008DCF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569B2908193EABA6008DCF46 /* Ladyfinger___Nail_Art_GalleryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		569B2900193EABA6008DCF46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 569B28D8193EABA4008DCF46 /* Beautec - Nail Catalogue */;
+			targetProxy = 569B28FF193EABA6008DCF46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		569B28E5193EABA5008DCF46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				569B28E6193EABA5008DCF46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		569B28EE193EABA5008DCF46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				569B28EF193EABA5008DCF46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		569B2904193EABA6008DCF46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				569B2905193EABA6008DCF46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		569B2909193EABA6008DCF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roland Tan (3ZFR6A8RAD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roland Tan (3ZFR6A8RAD)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7bd97db0-0ec8-464a-81c6-47c776a3e488";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		569B290A193EABA6008DCF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roland Tan (3ZFR6A8RAD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roland Tan (3ZFR6A8RAD)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "7bd97db0-0ec8-464a-81c6-47c776a3e488";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		569B290C193EABA6008DCF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beautec Pte. Ltd.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lady Finger - Nail Art Gallery/Beautec - Nail Catalogue-Prefix.pch";
+				INFOPLIST_FILE = "Lady Finger - Nail Art Gallery/Beautec - Nail Catalogue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Beautec - Nail Catalogue";
+				PROVISIONING_PROFILE = "7bd97db0-0ec8-464a-81c6-47c776a3e488";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		569B290D193EABA6008DCF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beautec Pte. Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beautec Pte. Ltd.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lady Finger - Nail Art Gallery/Beautec - Nail Catalogue-Prefix.pch";
+				INFOPLIST_FILE = "Lady Finger - Nail Art Gallery/Beautec - Nail Catalogue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Beautec - Nail Catalogue";
+				PROVISIONING_PROFILE = "7bd97db0-0ec8-464a-81c6-47c776a3e488";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		569B290F193EABA6008DCF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lady Finger - Nail Art Gallery.app/Lady Finger - Nail Art Gallery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lady Finger - Nail Art Gallery/Lady Finger - Nail Art Gallery-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lady Finger - Nail Art GalleryTests/Beautec - Nail CatalogueTests-Info.plist";
+				PRODUCT_NAME = "Beautec - Nail CatalogueTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		569B2910193EABA6008DCF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lady Finger - Nail Art Gallery.app/Lady Finger - Nail Art Gallery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lady Finger - Nail Art Gallery/Lady Finger - Nail Art Gallery-Prefix.pch";
+				INFOPLIST_FILE = "Lady Finger - Nail Art GalleryTests/Beautec - Nail CatalogueTests-Info.plist";
+				PRODUCT_NAME = "Beautec - Nail CatalogueTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		569B28D4193EABA4008DCF46 /* Build configuration list for PBXProject "Beautec - Nail Catalogue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				569B2909193EABA6008DCF46 /* Debug */,
+				569B290A193EABA6008DCF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		569B290B193EABA6008DCF46 /* Build configuration list for PBXNativeTarget "Beautec - Nail Catalogue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				569B290C193EABA6008DCF46 /* Debug */,
+				569B290D193EABA6008DCF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		569B290E193EABA6008DCF46 /* Build configuration list for PBXNativeTarget "Beautec - Nail CatalogueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				569B290F193EABA6008DCF46 /* Debug */,
+				569B2910193EABA6008DCF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 569B28D1193EABA4008DCF46 /* Project object */;
+}
